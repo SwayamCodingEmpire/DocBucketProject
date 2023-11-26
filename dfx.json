@@ -4,6 +4,12 @@
       "main": "src/DocBucket_backend/main.mo",
       "type": "motoko"
     },
+
+    "internet_identity" : {
+      "type": "pull",
+      "id": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+    },
+    
     "DocBucket_frontend": {
       "dependencies": [
         "DocBucket_backend"

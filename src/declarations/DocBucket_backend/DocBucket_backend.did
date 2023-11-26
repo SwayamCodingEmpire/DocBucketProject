@@ -1,0 +1,20 @@
+type Result = 
+ variant {
+   err: text;
+   ok;
+ };
+type Profile = 
+ record {
+   cgpa: float64;
+   degree: text;
+   name: text;
+   passout_year: nat;
+   registration_no: nat;
+   stream: text;
+ };
+service : {
+  create_profile: (Profile) -> ();
+  delete_profile: (nat) -> (Result);
+  read_profile: (nat) -> (opt Profile) query;
+  test: () -> (principal);
+}
